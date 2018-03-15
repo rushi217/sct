@@ -1,0 +1,128 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!--- Include the above in your HEAD tag ---------->
+
+
+<!DOCTYPE html><html class=''>
+<title>Login/SignUp</title><head>
+<link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="js/bootstrap.min.js"></script>
+<link href="in.css" type="text/css" rel="stylesheet">
+<link rel='stylesheet prefetch' href='css/font-awesome.min.css'>
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/line-icons.css">
+<link rel="stylesheet" href="css/owl.carousel.css">
+<link rel="stylesheet" href="css/owl.theme.css">
+<link rel="stylesheet" href="css/nivo-lightbox.css">
+<link rel="stylesheet" href="css/magnific-popup.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/menu_sideslide.css">
+<link rel="stylesheet" href="css/main1.css">
+<link rel="stylesheet" href="assets/fonts/stylesheet.css">
+<link rel="stylesheet" href="assets/css/fonticons.css">
+<link rel="stylesheet" href="assets/css/plugins.css" />
+<link rel="stylesheet" href="assets/fonts/stylesheet.css">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/responsive.css" />
+<style class="cp-pen-styles">
+</style></head>
+
+<body >
+
+        <!-- LOGIN MODULE -->
+        <div class="login">
+            <div class="wrap">
+                <!-- TOGGLE -->
+                <div id="toggle-wrap">
+                    <div id="toggle-terms">
+                        <div id="cross">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDER-->
+                <div class="content">
+
+
+                    <div id="slideshow">
+
+                        <div class="one" style="color:#041DC6;">
+                           </div>
+                        <div class="two" style="color:#B70602">
+                        </div>
+                        <div class="three" style=" color:#1BC003">
+                         </div>
+
+                    </div>
+                </div>
+
+                <!-- LOGIN FORM -->
+                <div class="user">
+
+                    <div class="form-wrap">
+                        <!-- TABS -->
+                    	<div class="tabs">
+                            <h3 class="login-tab"><a class="log-in active" href="#login-tab-content" style="text-decoration:none"><span>Login<span></a></h3>
+                    		<h3 class="signup-tab"><a class="sign-up" href="#signup-tab-content" style="text-decoration:none"><span>Sign Up</span></a></h3>
+                    	</div>
+                        <!-- TABS CONTENT -->
+                    	<div class="tabs-content">
+                            <!-- TABS CONTENT LOGIN -->
+                    		<div id="login-tab-content" class="active">
+                    			<form class="login-form" action="" method="post">
+                    				<input type="text" class="input" id="user_login" autocomplete="off" placeholder="Email or Username">
+                    				<input type="password" class="input" id="user_pass" autocomplete="off" placeholder="Password">
+                    				<input type="submit" class="button" value="Login">
+                    			</form>
+                    		</div>
+                            <!-- TABS CONTENT SIGNUP -->
+                    		<div id="signup-tab-content">
+                    			<form class="signup-form" action="" method="post">
+                    				<input type="email" class="input" id="user_email" autocomplete="off" placeholder="Email">
+                    				<input type="text" class="input" id="user_name" autocomplete="off" placeholder="Username">
+                    				<input type="password" class="input" id="user_pass" autocomplete="off" placeholder="Password">
+                    				<input type="submit" class="button" value="Sign Up">
+                    			</form>
+                    		</div>
+                    	</div>
+                	</div>
+                </div>
+            </div>
+        </div>
+
+<script src='//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script><script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script >/* LOGIN - MAIN.JS - dp 2017 */
+
+// LOGIN TABS
+$(function() {
+	var tab = $('.tabs h3 a');
+	tab.on('click', function(event) {
+		event.preventDefault();
+		tab.removeClass('active');
+		$(this).addClass('active');
+		tab_content = $(this).attr('href');
+		$('div[id$="tab-content"]').removeClass('active');
+		$(tab_content).addClass('active');
+	});
+});
+
+// SLIDESHOW
+$(function() {
+	$('#slideshow > div:gt(0)').hide();
+	setInterval(function() {
+		$('#slideshow > div:first')
+		.fadeOut(2500)
+		.next()
+		.fadeIn(2500)
+		.end()
+		.appendTo('#slideshow');
+	}, 3850);
+});
+
+</script>
+
+
+</body></html>

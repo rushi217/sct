@@ -13,8 +13,10 @@ html {
 a {
     color: #666;
     text-decoration: none;
+    outline: none;
 }
 a:hover {
+
     color: #4FDA8C;
 }
 
@@ -52,6 +54,7 @@ a.button {
     -moz-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
+    outline: none;
 }
 a.button:hover {
     border-color: #2D515C;
@@ -665,7 +668,7 @@ input {
         margin: auto;
         border-radius: 10px;
     }
-    
+
     @keyframes show_close {
         0% {
             opacity: 0;
@@ -716,7 +719,7 @@ input {
 		font-family:"Imprint MT Shadow";
 		font-weight:900;
     }
-    
+
     #slideshow div {
         -webkit-background-size: auto;
         -moz-background-size: auto;

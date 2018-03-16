@@ -193,6 +193,7 @@ background-color: rgba(0,0,0, 0.35);//efect
   padding: 8px;
   border-radius: 4px;
   background: #fff;
+	height: 250px;
 }
 .shot-item img {
   width: 100%;

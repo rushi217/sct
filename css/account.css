@@ -18,7 +18,7 @@
 
 .main_menu_bg{
     margin-top: 0px;
-    background-color:rgba(34, 36, 79,0.8);
+    background-color:rgb(34, 36, 79);
 	height:80px;
 }
 .main_menu_bg .navbar-default {

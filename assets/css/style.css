@@ -233,7 +233,7 @@ ul{
     margin-bottom: 4rem;
 }
 .overlay {
-    background-color: rgba(0,0,0, 0.4);//effect
+    background-color: rgba(0,0,0, 0.4);
     width: 100%;
     height:600px;
 }
@@ -572,7 +572,7 @@ color:#FFFFFF;
 }
 /*home section*/
 .home{
-    background:url(../images/traveling.jpg) no-repeat 100% 100%;
+    background:url(../images/traveling.jpg) no-repeat 0% 50%;
     background-size: cover;
 	background-attachment:fixed;
 }
@@ -640,8 +640,56 @@ color:#FFFFFF;
     transform: rotate(45deg);
 }
 
+/*foursquare*/
+
+.foursquare{
+    background:url(../images/foursquare.jpg) no-repeat 0% 10%;
+    background-size: cover;
+    background-attachment:fixed;
+    opacity: inherit;
+}
+
+.foursquare .main_home{
+    padding-top: 150px;
+}
+
+.foursquare .main_home h1{
+    color: #fff;
+    padding-bottom: 25px;
+}
+.foursquare .main_home p.subtitle{
+    color: #fff;
+    padding-bottom: 25px;
+    font-family: 'latolight';
+    font-size:2.0625rem;
+	line-height:3rem;
+}
+
+.foursquare .main_home .video_play_icon a{
+    width:175px;
+    height:125px;
+    background: #032F3E;
+    display: inline-block;
+    text-align: center;
+    line-height: 140px;
+
+}
+
+.foursquare .main_home .video_play_icon a i{
+    color:#fff;
+    border:2px solid #fff;
+    padding: 10px;
+    font-size:30px;
+    border-radius: 50%;
 
 
+}
+
+.foursquare .owl-theme .owl-nav {
+    margin-top: 80px;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+}
 
 /*service section css*/
 

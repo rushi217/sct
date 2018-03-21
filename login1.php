@@ -1,7 +1,7 @@
 
 <?php
 
-
+session_start();
 
 if(isset($_POST["reg_user"]))
     {
@@ -50,6 +50,11 @@ if(isset($_POST["reg_user"]))
         if(count($errors) == 0){
             $password= md5($password1);
             mysqli_query($db,"insert into user_table (username, password, email) values ('$username', '$password', '$email')");
+            
+            $_SESSION['username'] = $username;
+            $_SESSION['success'] = "You are now logged in";
+            header('location: account.php');
+            
             mysqli_close($db);
             //$msg="Profile Updated Successfully.";
         }
@@ -80,6 +85,11 @@ else if(isset($_POST["login"]))
             $results = mysqli_query($db, $query);
             if (mysqli_num_rows($results) == 1) {
                 echo "You are now logged in";
+                
+                $_SESSION['username'] = $username;
+                $_SESSION['success'] = "You are now logged in";
+                header('location: account.php');
+          
             }
             else {
   		echo "Wrong username/password combination";

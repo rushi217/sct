@@ -37,8 +37,11 @@ if(isset($_POST["reg_user"]))
 
         if ($user) { // if user exists
           if ($user['username'] === $username) {
-            array_push($errors, "Username already exists");
-            echo "Username already exists";
+            array_push($errors, "Username already exists"); ?>
+			<script type="text/javascript">
+			alert("Username already exists");
+			window.location.replace("login1.php");</script><?php exit;
+            
           }
 
           if ($user['email'] === $email) {
@@ -129,7 +132,7 @@ else if(isset($_POST["login"]))
                                 <div class="container-fluid">
                                     
                                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-										<ul class="nav navbar-nav navbar-left" style="padding-top:10px; font-size:30px; font-weight:700; font-family:Arial Rounded MT Bold">
+										<ul class="nav navbar-nav navbar-left" style="padding-top:10px; font-size:36px; font-weight:700; font-family:Arial Rounded MT Bold">
 											<li><font style="color:#0066FF">SMART<font style="color:#FFFFFF">CITY<font style="color:#669933">TRAVELLER</li>
 										</ul>
                                         <ul class="nav navbar-nav navbar-right">
@@ -160,12 +163,12 @@ else if(isset($_POST["login"]))
                                         <div style="padding-top:150px">&nbsp;</div>
                                     <div class="panel__wrap">
     					<div class="panel__box active" id="signInBox">
-                                            <form class="login-form" action="login1.php" method="post">
-                                                <label>Username
+                                            <form class="login-form" action="login1.php" method="post" style="height:300px">
+                                                <label style="padding-top:50px">Username
                                                     <input type="text" required="required" name="username" id="username">
                                                 </label>
                                                 <label>Password 
-                                                    <input type="password" name="password" id="password" required="required"/>
+                                                    <input type="password" name="password" id="password"/>
                                                  </label>
                                                      <input type="submit" value="LOGIN" name="login" id="login"/>
                                             </form>
@@ -173,16 +176,16 @@ else if(isset($_POST["login"]))
    					 <div class="panel__box" id="signUpBox">
                                              <form class="signup-form" action="login1.php" method="post">
                                                  <label>Username
-                                                     <input type="text" name="username" id="username" required="required"/>
+                                                     <input type="text" name="username" id="username"/>
                                                  </label>
                                                 <label>Email
-                                                    <input type="email" name="email" id="email" required="required"/>
+                                                    <input type="email" name="email" id="email"/>
                                                 </label>
                                                 <label>Password
-                                                    <input type="password" name="password1" id="password1" required="required"/>
+                                                    <input type="password" name="password1" id="password1"/>
                                                 </label>
                                                 <label>Confirm password
-                                                    <input type="password" name="password2" id="password2" required="required"/>
+                                                    <input type="password" name="password2" id="password2"/>
                                                 </label>
                                                     <input type="submit" value="SIGN UP" name="reg_user" id="reg_user">
                                              </form>

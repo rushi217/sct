@@ -1,12 +1,4 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 19 Mar, 2018, 1:21:21 AM
-    Author     : rushi
-*/
+
 
 * {
   -webkit-box-sizing: border-box;
@@ -62,7 +54,7 @@ a {
   top: 100%;
   width: 20%;
   -webkit-transform: translateX(75%);
-          transform: translateX(75%);
+          transform: translateX(100%);
   border: none;
   background:#FFFFFF;
   height: 3px;
@@ -115,8 +107,8 @@ color:#666666;
 }
 .panel__wrap .panel__box:last-child {
   right: 0;
-  -webkit-transform: translateX(-30%) scale(0.8);
-          transform: translateX(-30%) scale(0.8);
+  -webkit-transform: translateX(-10%) scale(0.8);
+          transform: translateX(-15%) scale(0.8);
   -webkit-animation: box-2--out 0.5s;
           animation: box-2--out 0.5s;
   -webkit-transform-origin: center left;
@@ -143,7 +135,7 @@ color:#666666;
   z-index: 1;
   position: absolute;
   padding: 20px;
-  background: #1F2C35;
+  background: #505A60;
   border-radius: 4px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -187,13 +179,13 @@ color:#666666;
 
 @-webkit-keyframes box-1 {
   0% {
-    -webkit-transform: translateX(30%) scale(0.8);
-            transform: translateX(30%) scale(0.8);
+    -webkit-transform: translateX(30%) scale(0.4);
+            transform: translateX(30%) scale(0.4);
     z-index: 1;
   }
   49% {
-    -webkit-transform: translateX(0) scale(0.9);
-            transform: translateX(0) scale(0.9);
+    -webkit-transform: translateX(0) scale(0.3);
+            transform: translateX(0) scale(0.3);
     z-index: 1;
   }
   50% {
@@ -531,7 +523,7 @@ margin-left:100px;
 }
 
 .home{
-    background:url(../images/travelling.jpg) no-repeat;
+    background:url(../images/Travelling-the-world-photos.jpg) no-repeat;
     background-size: cover;
 	}
 
